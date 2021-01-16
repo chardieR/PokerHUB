@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/cardrank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/colorLBlack"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/bimg"
+                        android:layout_width="match_parent"
+                        android:layout_height="168dp"
+                        android:src="@color/colorLBlack" />
+
+                    <TextView
+                    android:id="@+id/btitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorOrange"
+                        android:layout_marginBottom="2dp"
+                    android:text="TITLE"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/bdesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:maxLines="2"
+                    android:textStyle="normal"
+                    android:text="description"
+                    android:background="@color/colorOrange"
+                    android:textSize="18dp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+</RelativeLayout>
